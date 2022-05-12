@@ -81,6 +81,10 @@ test:
 #
 production:
   <<: *default
-  database: zone51_production
-  username: zone51
+  database: timezonedb
+  username: <%= ENV['ZONE51_DATABASE_USER'] %>
+  # you need to setup a tunnel with port forwarding:
+  # ssh -L 7733:<rds-endpoint>:5432 etl.devlab.main.atsint.net
+  host: localhost
+  port: 7733
   password: <%= ENV['ZONE51_DATABASE_PASSWORD'] %>
