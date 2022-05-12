@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Test Rails application created to play with timestamps with time zone in Rails and PostgreSQL.
 
-Things you may want to cover:
+The application was genereated using:
 
-* Ruby version
+```
+rails new zone51 -d postgresql
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+We've created a database using RDS under the `production` environment.  Follow instructions under config/database.yml to connect with the Rails dbconsole.
